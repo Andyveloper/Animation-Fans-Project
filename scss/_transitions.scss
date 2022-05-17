@@ -1,0 +1,4 @@
+@mixin hover-transition {
+  transition: all 0.5s ease;
+  color: $primary_important;
+}

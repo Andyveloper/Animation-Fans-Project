@@ -1,0 +1,56 @@
+@import "transitions";
+
+.top-header {
+  display: flex;
+  justify-content: flex-end;
+  background: $primary_dark;
+  .important-links {
+    margin: 5px 10%; 
+  }
+  li {
+    display: inline-block;
+    margin-left: 1.2rem;
+    color: $white;
+  }
+}
+
+img {
+  max-width: 5%;
+  margin-right: auto;
+}
+
+header{
+  width: 100%;
+  box-shadow: 0 -10px 15px 0 $primary_dark 
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 10%;
+  .menu-nav {
+    li {
+      margin: 0 2.5rem;
+      display: inline-block;
+      list-style: none;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+a {
+  color: $primary_dark;
+  text-decoration: none;
+}
+
+a:hover {
+  @include hover-transition;
+}
+
+.menu-nav__btn {
+  border: 4px solid $primary_important;
+  padding: 1rem 1rem;
+  margin-left: 3rem;
+  font-size: 1.2rem;
+}
