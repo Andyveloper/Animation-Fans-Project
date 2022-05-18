@@ -106,7 +106,7 @@ a:hover {
 .hero {
   background: url(../img/hero.jpg) no-repeat;
   height: 90vh;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   background-color: rgba(39, 42, 49, 0.7);
   background-blend-mode: soft-light;
