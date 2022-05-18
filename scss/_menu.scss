@@ -4,9 +4,11 @@
   display: flex;
   justify-content: flex-end;
   background: $primary_dark;
+
   .important-links {
-    margin: 5px 10%; 
+    margin: 5px 10%;
   }
+
   li {
     display: inline-block;
     margin-left: 1.2rem;
@@ -19,7 +21,7 @@ img {
   margin-right: auto;
 }
 
-header{
+header {
   width: 100%;
 }
 
@@ -28,6 +30,7 @@ header{
   justify-content: flex-end;
   align-items: center;
   margin: 0 10%;
+
   .menu-nav {
     li {
       margin: 0 2.5rem;
@@ -41,6 +44,7 @@ header{
 a {
   color: $primary_dark;
   text-decoration: none;
+
   @include unhover;
 }
 
