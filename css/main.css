@@ -61,8 +61,6 @@ img {
 
 header {
   width: 100%;
-  -webkit-box-shadow: 0 -10px 15px 0 #000;
-          box-shadow: 0 -10px 15px 0 #000;
 }
 
 .nav-container {
@@ -88,6 +86,8 @@ header {
 a {
   color: #272a31;
   text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 a:hover {
@@ -145,5 +145,96 @@ a:hover {
   line-height: 0;
   font-size: 1.5rem;
   color: #d3d3d3;
+}
+
+.main-program {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4rem;
+  background: url(../img/icons/pattern_bg.png);
+  background-color: rgba(255, 255, 255, 0.96);
+  background-blend-mode: soft-light;
+}
+
+.main-program__title {
+  font-size: 2rem;
+}
+
+.main-program__see-more {
+  padding: 4rem;
+}
+
+.divider {
+  border: 1px solid #ec5242;
+  width: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.main-program-grid {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 300px;
+      grid-template-rows: 300px;
+  margin: 0 10%;
+  gap: 3px;
+}
+
+.main-program-grid__grid-item {
+  background: #272a31;
+  background: rgba(39, 42, 49, 0.95);
+  text-align: center;
+  padding: 20px;
+  color: #d3d3d3;
+  border: 2px solid rgba(39, 42, 49, 0.95);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.main-program-grid__grid-item i {
+  padding: 1rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.main-program-grid__grid-item__title {
+  padding-bottom: 1rem;
+  color: #ec5242;
+}
+
+.main-program-grid__grid-item__content {
+  padding: 0 2rem;
+  font-size: 1.1rem;
+}
+
+.main-program-grid__grid-item:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: 2px solid #ec5242;
+  background-color: rgba(255, 255, 255, 0.96);
+  color: #272a31;
+}
+
+.main-program-grid__grid-item:hover .main-program-grid__grid-item__title {
+  color: #272a31;
+}
+
+.main-program-grid__grid-item:hover i {
+  color: #ec5242;
 }
 /*# sourceMappingURL=main.css.map */
