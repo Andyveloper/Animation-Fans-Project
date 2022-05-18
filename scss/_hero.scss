@@ -1,8 +1,38 @@
 .hero {
-  background: url(../dist/img/1108683.jpg) no-repeat fixed; 
-  height: 100vh;
+  background: url(../img/hero.jpg) no-repeat;
+  height: 90vh;
   width: 100%;
   overflow: hidden;
-  // background-color: rgba($color: $primary_dark, $alpha: 0.7);
-  // background-blend-mode: soft-light;
+  background-color: $opaque;
+  background-blend-mode: soft-light;
+  .hero-container {
+    margin: 10%;
+    color: $primary_important;
+    width: 49%;
+    line-height: 5.5rem;
+    &__quote {
+      font-size: 3rem;
+    }
+    &__title {
+      font-size: 5rem;
+    }
+    &__text-box {
+      color: set-text-color($primary_dark);
+      line-height: 2rem;
+      border: 1px solid $primary_light;
+      padding: 1rem;
+      width: 70%;
+      font-size: 1rem;
+    }
+    &__date {
+      color: set-text-color($primary_dark);
+      font-size: 2rem;
+    }
+
+    &__site {
+      line-height: 0;
+      font-size: 1.5rem;
+      color: set-text-color($primary_dark);
+    }
+  }
 }

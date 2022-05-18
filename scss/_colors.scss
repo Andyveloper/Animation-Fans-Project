@@ -8,4 +8,20 @@ $primary_important: #ec5242;
 $primary_light: #d3d3d3;
 
 // White
-$white: #fff
+$white: #fff;
+
+// Black
+$black: #000;
+
+// Opaque Background
+$opaque: rgba($color: $primary_dark, $alpha: 0.7);
+
+// If dark bg, return light color and viceversa
+@function set-text-color($color) {
+  @if (lightness($color)) > 40% {
+    @return $primary_dark;
+  } 
+  @else {
+    @return $primary_light;
+  }
+}
