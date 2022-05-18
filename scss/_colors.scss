@@ -16,6 +16,9 @@ $black: #000;
 // Opaque Background
 $opaque: rgba($color: $primary_dark, $alpha: 0.7);
 
+// Light Background
+$light: rgba($color: $white, $alpha: 0.96);
+
 // If dark bg, return light color and viceversa
 @function set-text-color($color) {
   @if (lightness($color)) > 40% {
@@ -24,4 +27,11 @@ $opaque: rgba($color: $primary_dark, $alpha: 0.7);
   @else {
     @return $primary_light;
   }
+}
+
+$opacity: 0.95;
+
+@mixin bg-opacity($color, $opacity) {
+  background: $color;
+  background: rgba($color, $opacity);  
 }

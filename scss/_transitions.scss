@@ -1,4 +1,24 @@
+// Hover into orange
 @mixin hover-transition {
   transition: all 0.5s ease;
   color: $primary_important;
+}
+
+// Unhover element
+@mixin unhover {
+  transition: all 0.2s ease;
+}
+
+// Hover into main-program elements
+@mixin active-border {
+  transition: all 0.2s ease;
+  border: 2px solid $primary_important;
+  background-color: $light;
+  color: $primary_dark;
+  .main-program-grid__grid-item__title {
+    color: $primary_dark;
+  }
+  i {
+    color: $primary_important;
+  }
 }

@@ -21,7 +21,6 @@ img {
 
 header{
   width: 100%;
-  box-shadow: 0 -10px 15px 0 $black 
 }
 
 .nav-container {
@@ -42,6 +41,7 @@ header{
 a {
   color: $primary_dark;
   text-decoration: none;
+  @include unhover;
 }
 
 a:hover {
