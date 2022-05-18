@@ -253,7 +253,7 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 4rem 0;
-  background: url("https://w.wallhaven.cc/full/xl/wallhaven-xl3y3o.jpg");
+  background: url("../img/featured-bg.jpg");
   background-color: #272a31;
   background-size: cover;
   background-blend-mode: soft-light;
@@ -316,5 +316,65 @@ a:hover {
 .content-divider {
   width: 20px;
   margin: 12px 0;
+}
+
+.partner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 0;
+  background-color: rgba(255, 255, 255, 0.96);
+  background-blend-mode: soft-light;
+}
+
+.partner__title {
+  font-size: 2rem;
+  color: #272a31;
+}
+
+.partner__title {
+  font-size: 2rem;
+}
+
+.partner-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  margin: 0 10%;
+}
+
+.partner-list__item {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin: 0 1.5rem;
+}
+
+.partner-list__item-img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
