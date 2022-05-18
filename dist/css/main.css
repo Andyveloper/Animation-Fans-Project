@@ -83,6 +83,12 @@ header {
   font-size: 1.2rem;
 }
 
+.logo {
+  width: 200px;
+  max-width: 100%;
+  padding: 10px;
+}
+
 a {
   color: #272a31;
   text-decoration: none;
@@ -376,5 +382,34 @@ a:hover {
   height: 100%;
   width: 100%;
   max-width: 100%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 10%;
+  background-color: #272a31;
+}
+
+.footer__logo {
+  margin: 2rem;
+  max-width: 100%;
+  width: 20rem;
+}
+
+.footer__content {
+  width: 100%;
+  color: #d3d3d3;
 }
 /*# sourceMappingURL=main.css.map */
