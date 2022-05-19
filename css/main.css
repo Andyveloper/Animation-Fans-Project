@@ -87,6 +87,35 @@ header {
   font-size: 1.2rem;
 }
 
+@media (max-width: 599px) {
+  .nav-container .menu-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .nav-container .menu-nav .menu-nav__item {
+    width: 15rem;
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
+
 .logo {
   width: 200px;
   max-width: 100%;
@@ -98,6 +127,12 @@ a {
   text-decoration: none;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+@media (max-width: 599px) {
+  a {
+    color: #fff;
+  }
 }
 
 a:hover {
@@ -202,9 +237,9 @@ a:hover {
   width: 80%;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: 300px;
-      grid-template-rows: 300px;
-  margin: 0 10%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  margin: 0 5%;
   gap: 3px;
 }
 
@@ -408,6 +443,24 @@ a:hover {
   background-color: #272a31;
 }
 
+@media (max-width: 599px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer__logo {
   margin: 2rem;
   max-width: 100%;
@@ -421,5 +474,312 @@ a:hover {
 
 .footer__content__text {
   padding-top: 1rem;
+}
+
+@media (max-width: 599px) {
+  .top-header {
+    display: none;
+  }
+  .logo,
+  .menu-nav__btn {
+    display: none;
+  }
+  .menu-btn {
+    position: absolute;
+    z-index: 999;
+    left: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #ec5242;
+  }
+  .menu-btn__burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background: #d3d3d3;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #ec5242;
+  }
+  .menu-btn__burger::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    width: 28px;
+    height: 3px;
+    background-color: #d3d3d3;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #ec5242;
+  }
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    width: 28px;
+    height: 3px;
+    background-color: #d3d3d3;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #ec5242;
+  }
+  .menu-btn__burger.open {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    background: transparent;
+  }
+  .nav {
+    position: fixed;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #272a31;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  .showMenu {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.about-hero {
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(39, 42, 49, 0.7);
+  background-blend-mode: soft-light;
+  background: url(../img/about-hero.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 4rem;
+  background-color: #272a31;
+  background-attachment: scroll;
+  text-align: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.about-hero__quote {
+  color: #ec5242;
+  font-size: 1.2rem;
+  margin: 0 5%;
+  text-shadow: 0 0.5px 1px black;
+}
+
+.about-hero__title {
+  color: #ec5242;
+  font-size: 1.7rem;
+  margin: 0 5%;
+  padding: 1rem 0;
+  text-shadow: 0 0.5px 1px black;
+}
+
+.about-hero__text-content {
+  color: #272a31;
+  background-color: #fff;
+  border: 2px solid #d3d3d3;
+  margin: 1rem 5%;
+  padding: 1rem;
+}
+
+.about-hero__contact-us {
+  color: #d3d3d3;
+  padding-bottom: 2rem;
+  text-shadow: 0 0.5px 1px black;
+}
+
+.about-hero__contact-us__email {
+  font-weight: 700;
+}
+
+.anifans-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #272a31;
+}
+
+.anifans-logo__title {
+  padding-top: 2rem;
+  margin: 0 5%;
+}
+
+.anifans-logo__text-content {
+  margin: 0 5%;
+}
+
+.anifans-logo__logo {
+  max-width: 90%;
+  margin: 2rem auto 2rem auto;
+  border: 1px solid #d3d3d3;
+}
+
+.anifans-logo__divider {
+  height: 2px;
+  color: #d3d3d3;
+  width: 100%;
+}
+
+.anifans-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #272a31;
+}
+
+.anifans-logo__title {
+  padding-top: 2rem;
+  margin: 0 5%;
+}
+
+.anifans-logo__text-content {
+  margin: 0 5%;
+}
+
+.anifans-logo__logo {
+  max-width: 90%;
+  margin: 2rem auto 2rem auto;
+  border: 1px solid #d3d3d3;
+}
+
+.anifans-logo__divider {
+  height: 2px;
+  color: #d3d3d3;
+  width: 100%;
+}
+
+.past-expo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+  text-align: center;
+  color: #272a31;
+}
+
+.past-expo__title {
+  margin: 0 5%;
+}
+
+.past-expo__text-content {
+  margin: 0 5%;
+}
+
+.past-expo__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 1rem;
+  margin: 2rem 0;
+  color: #fff;
+  width: 90%;
+}
+
+.past-expo__grid-item__item1 {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background: url(../img/about/about-grid.jpg);
+  background-color: rgba(236, 82, 66, 0.9);
+  background-attachment: scroll;
+  background-blend-mode: soft-light;
+  padding: 4rem 5%;
+  background-size: contain;
+}
+
+.past-expo__grid-item__item1__title {
+  font-size: 2rem;
+}
+
+.past-expo__grid-item__item2 {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background: url(../img/about/about-grid2.jpg);
+  background-color: rgba(236, 82, 66, 0.9);
+  background-attachment: scroll;
+  background-blend-mode: soft-light;
+  padding: 4rem 5%;
+  background-size: contain;
+}
+
+.about-divider {
+  border: 1px solid #ec5242;
+  width: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
