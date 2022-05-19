@@ -6,8 +6,8 @@
   padding: 4rem 0;
   background: url('../img/featured-bg.jpg');
   background-color: $primary_dark;
-  background-size: cover;
   background-blend-mode: soft-light;
+  @include responsive-bg;
 
   &-speakers {
     font-size: 2rem;

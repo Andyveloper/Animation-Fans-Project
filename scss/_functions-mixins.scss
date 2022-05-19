@@ -39,3 +39,11 @@
   justify-content: center;
   align-items: center;
 }
+
+// Responsive Parallax Background
+@mixin responsive-bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;  
+}

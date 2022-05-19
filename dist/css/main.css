@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'COCOGOOSE_light';
   src: url("../fonts/COCOGOOSE_Light/COCOGOOSE.woff2");
@@ -112,10 +116,14 @@ a:hover {
 .hero {
   background: url(../img/hero.jpg) no-repeat;
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   background-color: rgba(39, 42, 49, 0.7);
   background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .hero .hero-container {
@@ -261,8 +269,11 @@ a:hover {
   padding: 4rem 0;
   background: url("../img/featured-bg.jpg");
   background-color: #272a31;
-  background-size: cover;
   background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .featured-speakers {
@@ -348,10 +359,6 @@ a:hover {
   color: #272a31;
 }
 
-.partner__title {
-  font-size: 2rem;
-}
-
 .partner-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,7 +373,6 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
   padding: 0;
   margin: 0 10%;
 }
@@ -411,5 +417,9 @@ a:hover {
 .footer__content {
   width: 100%;
   color: #d3d3d3;
+}
+
+.footer__content__text {
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

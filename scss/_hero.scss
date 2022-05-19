@@ -1,10 +1,11 @@
 .hero {
   background: url(../img/hero.jpg) no-repeat;
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   background-color: $opaque;
   background-blend-mode: soft-light;
+  @include responsive-bg;
 
   .hero-container {
     margin: 10%;
