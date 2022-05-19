@@ -1,3 +1,3 @@
-import populateCards from "./featuredSpeakers.js";
+import populateCards from './featuredSpeakers.js';
 
 populateCards();
