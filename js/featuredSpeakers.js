@@ -44,7 +44,7 @@ const featuredSpeakers = [
 ];
 
 const populateCards = () => {
-  for (let i = 0; i < featuredSpeakers.length; i++) {
+  for (let i = 0; i < featuredSpeakers.length; i+=1) {
     sectionTitle.innerHTML = 'Featured Speakers';
     gridImg[i].src = featuredSpeakers[i].featuredImage;
     contentTitle[i].innerHTML = featuredSpeakers[i].name;
