@@ -7,15 +7,18 @@
   background: url(../img/icons/pattern_bg.png);
   background-color: $light;
   background-blend-mode: soft-light;
+
   &__title {
     font-size: 2rem;
   }
+
   &__see-more {
     padding: 4rem;
   }
 }
+
 .divider {
-  border: 1px solid $primary_important; 
+  border: 1px solid $primary_important;
   width: 3rem;
   margin-top: 1rem;
   margin-bottom: 3rem;
@@ -28,26 +31,33 @@
   grid-template-rows: 300px;
   margin: 0 10%;
   gap: 3px;
+
   &__grid-item {
     @include bg-opacity ($primary_dark, $opacity);
+
     text-align: center;
     padding: 20px;
     color: set-text-color($primary_dark);
     border: 2px solid rgba($color: $primary_dark, $alpha: 0.95);
+
     @include unhover;
+
     i {
       padding: 1rem;
       align-items: baseline;
     }
+
     &__title {
       padding-bottom: 1rem;
       color: $primary_important;
     }
+
     &__content {
       padding: 0 2rem;
       font-size: 1.1rem;
     }
   }
+
   &__grid-item:hover {
     @include active-border;
   }

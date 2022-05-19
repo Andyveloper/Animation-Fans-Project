@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "- First Capstone Project",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Zeraltz/First-Capstone.git"
@@ -13,9 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Zeraltz/First-Capstone/issues"
-  },
+  "bugs": {},
   "homepage": "https://github.com/Zeraltz/First-Capstone#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",

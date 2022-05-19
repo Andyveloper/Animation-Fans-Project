@@ -23,7 +23,8 @@ $light: rgba($color: $white, $alpha: 0.96);
 @function set-text-color($color) {
   @if (lightness($color)) > 40% {
     @return $primary_dark;
-  } 
+  }
+
   @else {
     @return $primary_light;
   }
@@ -33,5 +34,5 @@ $opacity: 0.95;
 
 @mixin bg-opacity($color, $opacity) {
   background: $color;
-  background: rgba($color, $opacity);  
+  background: rgba($color, $opacity);
 }

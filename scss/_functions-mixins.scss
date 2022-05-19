@@ -15,10 +15,27 @@
   border: 2px solid $primary_important;
   background-color: $light;
   color: $primary_dark;
+
   .main-program-grid__grid-item__title {
     color: $primary_dark;
   }
+
   i {
     color: $primary_important;
   }
+}
+
+// Flex directions
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

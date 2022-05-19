@@ -5,17 +5,21 @@
   overflow: hidden;
   background-color: $opaque;
   background-blend-mode: soft-light;
+
   .hero-container {
     margin: 10%;
     color: $primary_important;
     width: 49%;
     line-height: 5.5rem;
+
     &__quote {
       font-size: 3rem;
     }
+
     &__title {
       font-size: 5rem;
     }
+
     &__text-box {
       color: set-text-color($primary_dark);
       line-height: 2rem;
@@ -24,6 +28,7 @@
       width: 70%;
       font-size: 1rem;
     }
+
     &__date {
       color: set-text-color($primary_dark);
       font-size: 2rem;
