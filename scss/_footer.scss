@@ -1,16 +1,17 @@
 .footer {
   @include flex-row;
+
   padding: 4rem 10%;
   background-color: $primary_dark;
+
   &__logo {
     margin: 2rem;
     max-width: 100%;
     width: 20rem;
-
   }
+
   &__content {
     width: 100%;
     color: set-text-color($primary_dark);
   }
-  
 }

@@ -8,6 +8,7 @@
   background-color: $primary_dark;
   background-size: cover;
   background-blend-mode: soft-light;
+
   &-speakers {
     font-size: 2rem;
     color: set-text-color($primary_dark);
@@ -22,6 +23,7 @@
   margin: 4rem 10%;
   gap: 3rem;
   align-items: center;
+
   &-item {
     color: set-text-color($primary_dark);
     width: 100%;
@@ -29,16 +31,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     &__img {
       width: 20%;
       max-width: 100%;
       height: auto;
       margin: 12px;
     }
+
     &__content {
       &__title {
         font-size: 1.5rem;
       }
+
       &__description {
         color: $primary_important;
         font-size: 0.9rem;
