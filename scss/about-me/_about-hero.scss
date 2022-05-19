@@ -1,0 +1,51 @@
+.about-hero {
+  @include hero-dimension;
+
+  background: url(../img/about-hero.jpg);
+
+  @include flex-column;
+  @include responsive-bg;
+
+  height: fit-content;
+  padding-top: 4rem;
+  background-color: $primary_dark;
+  background-attachment: scroll;
+  text-align: center;
+  justify-content: flex-start;
+
+  &__quote {
+    color: $primary_important;
+    font-size: 1.2rem;
+    margin: 0 5%;
+
+    @include shadow;
+  }
+
+  &__title {
+    color: $primary_important;
+    font-size: 1.7rem;
+    margin: 0 5%;
+    padding: 1rem 0;
+
+    @include shadow;
+  }
+
+  &__text-content {
+    color: $primary_dark;
+    background-color: $white;
+    border: 2px solid $primary_light;
+    margin: 1rem 5%;
+    padding: 1rem;
+  }
+
+  &__contact-us {
+    color: $primary_light;
+    padding-bottom: 2rem;
+
+    @include shadow;
+
+    &__email {
+      font-weight: 700;
+    }
+  }
+}

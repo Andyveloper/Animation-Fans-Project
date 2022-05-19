@@ -1,11 +1,16 @@
 // commons imports
-@import 'resets';
-@import 'hosted-fonts';
-@import 'typography';
-@import 'colors';
-@import 'menu';
-@import 'hero';
-@import 'main-program-section';
-@import 'featured';
-@import 'partners';
-@import 'footer'
+@import 'home-and-global/resets';
+@import 'home-and-global/hosted-fonts';
+@import 'home-and-global/typography';
+@import 'home-and-global/colors';
+@import 'home-and-global/menu';
+@import 'home-and-global/hero';
+@import 'home-and-global/main-program-section';
+@import 'home-and-global/featured';
+@import 'home-and-global/partners';
+@import 'home-and-global/footer';
+@import 'about-me/about-header';
+@import 'about-me/about-hero';
+@import 'about-me/about-logo';
+@import 'about-me/about-logo';
+@import 'about-me/about-past-expo';

@@ -1,0 +1,27 @@
+.anifans-logo {
+  @include flex-column;
+
+  text-align: center;
+  color: $primary_dark;
+
+  &__title {
+    padding-top: 2rem;
+
+    @include phone-margin; }
+
+  &__text-content {
+    @include phone-margin; }
+
+  &__logo {
+    max-width: 90%;
+    margin: 2rem auto 2rem auto;
+    border: 1px solid $primary_light;
+  }
+
+  &__divider {
+    height: 2px;
+    color: $primary_light;
+    width: 100%;
+  }
+}
+

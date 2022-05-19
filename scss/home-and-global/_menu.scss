@@ -1,4 +1,5 @@
 @import "functions-mixins";
+@import 'media-queries';
 
 .top-header {
   display: flex;
@@ -38,6 +39,22 @@ header {
       list-style: none;
       font-size: 1.2rem;
     }
+
+    @include for-phone-only {
+      display: flex;
+
+      @include flex-column;
+
+      align-items: flex-start;
+
+      .menu-nav__item {
+        width: 15rem;
+        padding: 1rem 0;
+        font-size: 2rem;
+        color: $white;
+        border-bottom: 1px solid $white;
+      }
+    }
   }
 }
 
@@ -52,6 +69,10 @@ a {
   text-decoration: none;
 
   @include unhover;
+
+  @include for-phone-only {
+    color: $white;
+  }
 }
 
 a:hover {

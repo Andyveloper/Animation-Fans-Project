@@ -5,6 +5,7 @@
   overflow: hidden;
   background-color: $opaque;
   background-blend-mode: soft-light;
+
   @include responsive-bg;
 
   .hero-container {
