@@ -22,7 +22,7 @@
 
 ## About
 
-**On this website I'm showing how passionate I am about coding, learning new technologies and animation in general, I tried my best to go above and beyond the requirements, and learned SASS in two days and how to modularize JavaScript code to improve performance and loading times**
+**On this website I'm showing how passionate I am about coding, learning new technologies and animation in general, I tried my best to go above and beyond the requirements, and learned SASS in two days and how to modularize JavaScript code to improve performance and loading times. I believe this is a really well made project for a beginner, since it's my first project I have special love for this one.**
 
 
 
@@ -46,7 +46,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- I believe this is a really well made project for a beginner, since it's my first project I have special love for this one.
+- Cindy Shin on Behance `https://www.behance.net/adagio07`
 
 ## 📝 License
 
