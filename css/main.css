@@ -60,6 +60,9 @@ body {
 
 img {
   max-width: 5%;
+}
+
+.menu-link {
   margin-right: auto;
 }
 
@@ -87,13 +90,20 @@ header {
   font-size: 1.2rem;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .nav-container .menu-nav li {
     margin: 0 2rem;
   }
 }
 
-@media (max-width: 599px) {
+@media (min-width: 769px) and (max-width: 1250px) {
+  .nav-container .menu-nav li {
+    font-size: 0.8rem;
+    margin: 0 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
   .nav-container .menu-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -139,7 +149,7 @@ a:active {
   color: #ec5242;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   a {
     color: #fff;
   }
@@ -158,6 +168,15 @@ a:hover {
   font-size: 1.2rem;
 }
 
+@media (min-width: 769px) and (max-width: 1250px) {
+  .menu-nav__btn {
+    font-size: 0.8rem;
+    margin-left: 0;
+    padding: 0.5rem 0.5rem;
+    border: 2px solid #ec5242;
+  }
+}
+
 .hero {
   background: url(../img/hero.jpg) no-repeat;
   height: -webkit-fit-content;
@@ -173,7 +192,7 @@ a:hover {
   background-size: cover;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .hero {
     background-position: center right;
   }
@@ -186,7 +205,7 @@ a:hover {
   line-height: 5.5rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .hero .hero-container {
     line-height: 2.5rem;
     margin: 0 5%;
@@ -215,7 +234,7 @@ a:hover {
   font-size: 3rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .hero .hero-container__quote {
     font-size: 1.2rem;
   }
@@ -225,7 +244,7 @@ a:hover {
   font-size: 5rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .hero .hero-container__title {
     font-size: 1.7rem;
   }
@@ -240,7 +259,7 @@ a:hover {
   font-size: 1rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .hero .hero-container__text-box {
     width: 100%;
     margin-top: 2rem;
@@ -252,7 +271,7 @@ a:hover {
   font-size: 2rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .hero .hero-container__date {
     font-size: 1.2rem;
     padding: 2rem 0;
@@ -265,7 +284,7 @@ a:hover {
   color: #d3d3d3;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .hero .hero-container__site {
     font-size: 0.8rem;
     padding-bottom: 4rem;
@@ -300,7 +319,7 @@ a:hover {
   padding: 4rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .main-program__see-more {
     display: none;
   }
@@ -325,7 +344,7 @@ a:hover {
   gap: 3px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .main-program-grid {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
@@ -335,6 +354,15 @@ a:hover {
     margin: 2rem 0;
     color: #fff;
     width: 90%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1250px) {
+  .main-program-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
 }
 
@@ -349,7 +377,7 @@ a:hover {
   transition: all 0.2s ease;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .main-program-grid__grid-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -380,7 +408,7 @@ a:hover {
   color: #ec5242;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .main-program-grid__grid-item__title {
     padding: 0;
   }
@@ -419,7 +447,7 @@ a:hover {
   }
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .main-program-grid__grid-item__button {
     display: none;
   }
@@ -485,13 +513,21 @@ a:hover {
           align-items: center;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .featured-speakers__grid {
     width: 90%;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     margin: 2rem 5%;
     gap: 3rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1250px) {
+  .featured-speakers__grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    width: 80%;
   }
 }
 
@@ -526,7 +562,7 @@ a:hover {
   margin: 12px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .featured-speakers__grid-item__img {
     width: 30%;
   }
@@ -600,7 +636,7 @@ a:hover {
   margin: 0 10%;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .partner-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -625,7 +661,7 @@ a:hover {
   margin: 0 1.5rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .partner-list__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -640,7 +676,8 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
+    width: 70%;
   }
 }
 
@@ -650,15 +687,15 @@ a:hover {
   max-width: 100%;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .no-pad {
     padding: 0;
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .half-pad {
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 0;
   }
 }
@@ -681,7 +718,7 @@ a:hover {
   background-color: #272a31;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -714,7 +751,7 @@ a:hover {
   padding-top: 1rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .top-header {
     display: none;
   }
@@ -832,7 +869,7 @@ a:hover {
           justify-content: flex-start;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .about-hero {
     height: 90vh;
   }
@@ -845,7 +882,7 @@ a:hover {
   text-shadow: 0 0.5px 1px black;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .about-hero__quote {
     display: none;
   }
@@ -859,7 +896,7 @@ a:hover {
   text-shadow: 0 0.5px 1px black;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .about-hero__title {
     margin: 0 15%;
     font-size: 4rem;
@@ -875,7 +912,7 @@ a:hover {
   padding: 1rem;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .about-hero__text-content {
     margin: 1rem 10%;
   }
@@ -891,7 +928,7 @@ a:hover {
   font-weight: 700;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .about-hero__contact-us {
     width: 50%;
     padding-top: 2rem;
@@ -899,7 +936,7 @@ a:hover {
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .desktop {
     display: none;
   }
@@ -923,7 +960,7 @@ a:hover {
   color: #272a31;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .anifans-logo {
     padding-top: 4rem;
   }
@@ -934,7 +971,7 @@ a:hover {
   margin: 0 5%;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .anifans-logo__title {
     padding-top: 0;
   }
@@ -950,7 +987,7 @@ a:hover {
   border: 1px solid #d3d3d3;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .anifans-logo__logo {
     max-width: 100%;
     margin: 3rem auto 4rem auto;
@@ -965,7 +1002,7 @@ a:hover {
   width: 100%;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .anifans-logo__divider {
     color: rgba(39, 42, 49, 0.7);
   }
@@ -994,7 +1031,7 @@ a:hover {
   margin: 0 5%;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .past-expo__title {
     margin: 0 10%;
   }
@@ -1004,7 +1041,7 @@ a:hover {
   margin: 0 5%;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .past-expo__text-content {
     margin: 0 10%;
     padding-bottom: 4rem;
@@ -1024,7 +1061,7 @@ a:hover {
   width: 90%;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .past-expo__grid {
     width: 80%;
     -ms-grid-columns: (1fr)[2];
@@ -1046,7 +1083,7 @@ a:hover {
   background-size: cover;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .past-expo__grid-item__item1 {
     padding: 4rem;
   }
@@ -1056,13 +1093,13 @@ a:hover {
   font-size: 2rem;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .past-expo__grid-item__item1__title {
     font-size: 4rem;
   }
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .past-expo__grid-item__item1__text-content {
     font-size: 1.5rem;
   }
@@ -1080,7 +1117,7 @@ a:hover {
   padding: 4rem 5%;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .past-expo__grid-item__item2 {
     padding: 4rem;
   }
@@ -1094,7 +1131,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 769px) {
   .about-divider {
     margin-bottom: 2rem;
   }
