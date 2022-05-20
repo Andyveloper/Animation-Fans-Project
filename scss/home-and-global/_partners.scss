@@ -30,7 +30,8 @@
     @include for-phone-only {
       @include flex-column;
 
-      padding: 4rem 0;
+      padding: 2rem 0;
+      width: 70%;
     }
 
     &-img {
@@ -49,7 +50,7 @@
 
 .half-pad {
   @include for-phone-only {
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 0;
   }
 }

@@ -3,29 +3,32 @@
 - First Capstone Project
 
 ## Website Name
-- 
+- Animation Fans!
+
+## Loom Video with the Fast Explanation
+- https://www.loom.com/share/01a185d6467f4df6885816d6357906da
 
 ## Project Website (GitHub Pages)
-- https://zeraltz.github.io/Portfolio-Website/ 
+- https://zeraltz.github.io/First-Capstone/ 
 
 ## Clone the Project
-- `git clone https://github.com/Zeraltz/Portfolio-Website.git`
+- `git clone https://github.com/Zeraltz/First-Capstone.git`
 
 ## Built With
 
-- HTML, CSS
+- HTML, CSS, SASS, JS.
 - VSCode
 
 
-## Getting Started
+## About
 
-**This website will link all of my projects as a portfolio**
+**On this website I'm showing how passionate I am about coding, learning new technologies and animation in general, I tried my best to go above and beyond the requirements, and learned SASS in two days and how to modularize JavaScript code to improve performance and loading times. I believe this is a really well made project for a beginner, since it's my first project I have special love for this one.**
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [@Zeraltz](https://github.com/Zeraltz)
 - Twitter: [@MauroCantillo_](https://twitter.com/MauroCantillo_)
@@ -43,7 +46,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- I want to go above and beyond my capabilities while doing this project, I expect it to be good
+- Cindy Shin on Behance `https://www.behance.net/adagio07`
 
 ## 📝 License
 

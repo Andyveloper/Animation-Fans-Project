@@ -14,6 +14,10 @@
     background-position: center right;
   }
 
+  @include for-tablet {
+    background-position: center right;
+  }
+
   .hero-container {
     margin: 10% 10% 5% 10%;
     color: $primary_important;
