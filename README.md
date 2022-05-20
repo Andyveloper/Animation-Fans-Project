@@ -3,23 +3,23 @@
 - First Capstone Project
 
 ## Website Name
-- 
+- Animation Fans!
 
 ## Project Website (GitHub Pages)
-- https://zeraltz.github.io/Portfolio-Website/ 
+- https://zeraltz.github.io/First-Capstone/ 
 
 ## Clone the Project
-- `git clone https://github.com/Zeraltz/Portfolio-Website.git`
+- `git clone https://github.com/Zeraltz/First-Capstone.git`
 
 ## Built With
 
-- HTML, CSS
+- HTML, CSS, SASS, JS.
 - VSCode
 
 
 ## Getting Started
 
-**This website will link all of my projects as a portfolio**
+**On this website I'm showing how passionate I am about coding, learning new technologies and**
 
 
 
