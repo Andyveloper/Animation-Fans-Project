@@ -11,7 +11,7 @@
   }
 
   .menu-btn {
-    position: absolute;
+    position: fixed;
     z-index: 999;
     left: 1rem;
     top: 1rem;
@@ -20,6 +20,7 @@
     cursor: pointer;
 
     @include hover-transition;
+    
 
     &__burger {
       position: absolute;

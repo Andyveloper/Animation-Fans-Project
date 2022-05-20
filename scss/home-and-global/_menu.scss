@@ -74,6 +74,10 @@ a {
 
   @include unhover;
 
+  &:active {
+    color: $primary_important;
+  }
+
   @include for-phone-only {
     color: $white;
   }

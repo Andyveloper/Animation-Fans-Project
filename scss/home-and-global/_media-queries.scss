@@ -1,3 +1,7 @@
+@mixin for-mini-device {
+  @media (max-width: 415px) { @content; }  
+}
+
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
 }
