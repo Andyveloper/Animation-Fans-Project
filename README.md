@@ -17,15 +17,15 @@
 - VSCode
 
 
-## Getting Started
+## About
 
-**On this website I'm showing how passionate I am about coding, learning new technologies and**
+**On this website I'm showing how passionate I am about coding, learning new technologies and animation in general, I tried my best to go above and beyond the requirements, and learned SASS in two days and how to modularize JavaScript code to improve performance and loading times**
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [@Zeraltz](https://github.com/Zeraltz)
 - Twitter: [@MauroCantillo_](https://twitter.com/MauroCantillo_)
@@ -43,7 +43,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- I want to go above and beyond my capabilities while doing this project, I expect it to be good
+- I believe this is a really well made project for a beginner, since it's my first project I have special love for this one.
 
 ## 📝 License
 
