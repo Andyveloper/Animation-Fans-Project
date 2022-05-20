@@ -7,9 +7,9 @@
   background: url('../img/featured-bg.jpg');
   background-color: $primary_dark;
   background-blend-mode: soft-light;
-  
+
   @include responsive-bg;
-  
+
   &-speakers {
     font-size: 2rem;
     color: set-text-color($primary_dark);
@@ -24,19 +24,19 @@
   margin: 4rem 10%;
   gap: 3rem;
   align-items: center;
-  
+
   @include for-phone-only {
     width: 90%;
     grid-template-columns: auto;
     margin: 2rem 5%;
     gap: 3rem;
   }
-  
+
   @include for-tablet {
     grid-template-columns: auto;
     width: 80%;
   }
-  
+
   &-item {
     color: set-text-color($primary_dark);
     width: 100%;
