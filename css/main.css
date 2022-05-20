@@ -198,6 +198,12 @@ a:hover {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1250px) {
+  .hero {
+    background-position: center right;
+  }
+}
+
 .hero .hero-container {
   margin: 10% 10% 5% 10%;
   color: #ec5242;
