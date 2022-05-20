@@ -1,3 +1,5 @@
+@import '../home-and-global/media-queries';
+
 .past-expo {
   @include flex-column;
 
@@ -7,10 +9,18 @@
 
   &__title {
     @include phone-margin;
+
+    @include for-laptop-up {
+      @include desktop-margin;
+    }
   }
 
   &__text-content {
     @include phone-margin;
+
+    @include for-laptop-up {
+      @include desktop-margin;
+    }
   }
 
   &__grid {
@@ -22,16 +32,26 @@
     color: $white;
     width: 90%;
 
+    @include for-laptop-up {
+      width: 80%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     &-item {
       &__item1 {
+        background: url(../img/about/about-grid1.jpg) no-repeat;
+        background-color: rgba($color: $primary_important, $alpha: 0.9);
+
         @include responsive-bg;
 
-        background: url(../img/about/about-grid.jpg);
-        background-color: rgba($color: $primary_important, $alpha: 0.9);
         background-attachment: scroll;
         background-blend-mode: soft-light;
         padding: 4rem 5%;
-        background-size: contain;
+        background-size: cover;
+
+        @include for-laptop-up {
+          padding: 25% 25%;
+        }
 
         &__title {
           font-size: 2rem;
@@ -39,14 +59,18 @@
       }
 
       &__item2 {
+        background: url(../img/about/about-grid2.jpg) no-repeat;
+        background-color: rgba($color: $primary_important, $alpha: 0.9);
+
         @include responsive-bg;
 
-        background: url(../img/about/about-grid2.jpg);
-        background-color: rgba($color: $primary_important, $alpha: 0.9);
         background-attachment: scroll;
         background-blend-mode: soft-light;
         padding: 4rem 5%;
-        background-size: contain;
+
+        @include for-laptop-up {
+          padding: 25% 25%;
+        }
       }
     }
   }
@@ -56,4 +80,8 @@
   @include divider;
 
   margin-bottom: 1rem;
+
+  @include for-laptop-up {
+    margin-bottom: 2rem;
+  }
 }

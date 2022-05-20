@@ -1,27 +1,49 @@
+@import '../home-and-global/media-queries';
+
 .anifans-logo {
   @include flex-column;
 
   text-align: center;
   color: $primary_dark;
 
+  @include for-laptop-up {
+    padding-top: 4rem;
+  }
+
   &__title {
     padding-top: 2rem;
 
-    @include phone-margin; }
+    @include phone-margin;
+
+    @include for-laptop-up {
+      padding-top: 0;
+    }
+  }
 
   &__text-content {
-    @include phone-margin; }
+    @include phone-margin;
+  }
 
   &__logo {
     max-width: 90%;
     margin: 2rem auto 2rem auto;
     border: 1px solid $primary_light;
+
+    @include for-laptop-up {
+      max-width: 100%;
+      margin: 3rem auto 4rem auto;
+      width: 35%;
+      padding: 2rem 3rem;
+    }
   }
 
   &__divider {
     height: 2px;
     color: $primary_light;
     width: 100%;
+
+    @include for-laptop-up {
+      color: $opaque;
+    }
   }
 }
-

@@ -87,6 +87,12 @@ header {
   font-size: 1.2rem;
 }
 
+@media (min-width: 1365px) {
+  .nav-container .menu-nav li {
+    margin: 0 2rem;
+  }
+}
+
 @media (max-width: 599px) {
   .nav-container .menu-nav {
     display: -webkit-box;
@@ -594,11 +600,23 @@ a:hover {
           justify-content: flex-start;
 }
 
+@media (min-width: 1365px) {
+  .about-hero {
+    height: 90vh;
+  }
+}
+
 .about-hero__quote {
   color: #ec5242;
   font-size: 1.2rem;
   margin: 0 5%;
   text-shadow: 0 0.5px 1px black;
+}
+
+@media (min-width: 1365px) {
+  .about-hero__quote {
+    display: none;
+  }
 }
 
 .about-hero__title {
@@ -609,12 +627,26 @@ a:hover {
   text-shadow: 0 0.5px 1px black;
 }
 
+@media (min-width: 1365px) {
+  .about-hero__title {
+    margin: 0 15%;
+    font-size: 4rem;
+    padding-top: 5rem;
+  }
+}
+
 .about-hero__text-content {
   color: #272a31;
   background-color: #fff;
   border: 2px solid #d3d3d3;
   margin: 1rem 5%;
   padding: 1rem;
+}
+
+@media (min-width: 1365px) {
+  .about-hero__text-content {
+    margin: 1rem 10%;
+  }
 }
 
 .about-hero__contact-us {
@@ -627,43 +659,17 @@ a:hover {
   font-weight: 700;
 }
 
-.anifans-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: #272a31;
+@media (min-width: 1365px) {
+  .about-hero__contact-us {
+    width: 50%;
+    padding-top: 2rem;
+  }
 }
 
-.anifans-logo__title {
-  padding-top: 2rem;
-  margin: 0 5%;
-}
-
-.anifans-logo__text-content {
-  margin: 0 5%;
-}
-
-.anifans-logo__logo {
-  max-width: 90%;
-  margin: 2rem auto 2rem auto;
-  border: 1px solid #d3d3d3;
-}
-
-.anifans-logo__divider {
-  height: 2px;
-  color: #d3d3d3;
-  width: 100%;
+@media (max-width: 599px) {
+  .desktop {
+    display: none;
+  }
 }
 
 .anifans-logo {
@@ -684,9 +690,21 @@ a:hover {
   color: #272a31;
 }
 
+@media (min-width: 1365px) {
+  .anifans-logo {
+    padding-top: 4rem;
+  }
+}
+
 .anifans-logo__title {
   padding-top: 2rem;
   margin: 0 5%;
+}
+
+@media (min-width: 1365px) {
+  .anifans-logo__title {
+    padding-top: 0;
+  }
 }
 
 .anifans-logo__text-content {
@@ -699,10 +717,25 @@ a:hover {
   border: 1px solid #d3d3d3;
 }
 
+@media (min-width: 1365px) {
+  .anifans-logo__logo {
+    max-width: 100%;
+    margin: 3rem auto 4rem auto;
+    width: 35%;
+    padding: 2rem 3rem;
+  }
+}
+
 .anifans-logo__divider {
   height: 2px;
   color: #d3d3d3;
   width: 100%;
+}
+
+@media (min-width: 1365px) {
+  .anifans-logo__divider {
+    color: rgba(39, 42, 49, 0.7);
+  }
 }
 
 .past-expo {
@@ -728,8 +761,20 @@ a:hover {
   margin: 0 5%;
 }
 
+@media (min-width: 1365px) {
+  .past-expo__title {
+    margin: 0 10%;
+  }
+}
+
 .past-expo__text-content {
   margin: 0 5%;
+}
+
+@media (min-width: 1365px) {
+  .past-expo__text-content {
+    margin: 0 10%;
+  }
 }
 
 .past-expo__grid {
@@ -745,17 +790,31 @@ a:hover {
   width: 90%;
 }
 
+@media (min-width: 1365px) {
+  .past-expo__grid {
+    width: 80%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .past-expo__grid-item__item1 {
+  background: url(../img/about/about-grid1.jpg) no-repeat;
+  background-color: rgba(236, 82, 66, 0.9);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background: url(../img/about/about-grid.jpg);
-  background-color: rgba(236, 82, 66, 0.9);
   background-attachment: scroll;
   background-blend-mode: soft-light;
   padding: 4rem 5%;
-  background-size: contain;
+  background-size: cover;
+}
+
+@media (min-width: 1365px) {
+  .past-expo__grid-item__item1 {
+    padding: 25% 25%;
+  }
 }
 
 .past-expo__grid-item__item1__title {
@@ -763,16 +822,21 @@ a:hover {
 }
 
 .past-expo__grid-item__item2 {
+  background: url(../img/about/about-grid2.jpg) no-repeat;
+  background-color: rgba(236, 82, 66, 0.9);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background: url(../img/about/about-grid2.jpg);
-  background-color: rgba(236, 82, 66, 0.9);
   background-attachment: scroll;
   background-blend-mode: soft-light;
   padding: 4rem 5%;
-  background-size: contain;
+}
+
+@media (min-width: 1365px) {
+  .past-expo__grid-item__item2 {
+    padding: 25% 25%;
+  }
 }
 
 .about-divider {
@@ -781,5 +845,11 @@ a:hover {
   margin-top: 1rem;
   margin-bottom: 3rem;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 1365px) {
+  .about-divider {
+    margin-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

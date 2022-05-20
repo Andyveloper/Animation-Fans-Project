@@ -38,6 +38,10 @@ header {
       display: inline-block;
       list-style: none;
       font-size: 1.2rem;
+
+      @include for-laptop-up {
+        margin: 0 2rem;
+      }
     }
 
     @include for-phone-only {

@@ -10,6 +10,10 @@
   @media (min-width: 900px) { @content; }
 }
 
+@mixin for-laptop-up {
+  @media (min-width: 1365px) { @content; }
+}
+
 @mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
+  @media (min-width: 1600px) { @content; }
 }

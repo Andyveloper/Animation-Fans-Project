@@ -1,3 +1,5 @@
+@import '../home-and-global/media-queries';
+
 .about-hero {
   @include hero-dimension;
 
@@ -13,12 +15,20 @@
   text-align: center;
   justify-content: flex-start;
 
+  @include for-laptop-up {
+    height: 90vh;
+  }
+
   &__quote {
     color: $primary_important;
     font-size: 1.2rem;
     margin: 0 5%;
 
     @include shadow;
+
+    @include for-laptop-up {
+      display: none;
+    }
   }
 
   &__title {
@@ -28,6 +38,12 @@
     padding: 1rem 0;
 
     @include shadow;
+
+    @include for-laptop-up {
+      margin: 0 15%;
+      font-size: 4rem;
+      padding-top: 5rem;
+    }
   }
 
   &__text-content {
@@ -36,6 +52,10 @@
     border: 2px solid $primary_light;
     margin: 1rem 5%;
     padding: 1rem;
+
+    @include for-laptop-up {
+      margin: 1rem 10%;
+    }
   }
 
   &__contact-us {
@@ -47,5 +67,16 @@
     &__email {
       font-weight: 700;
     }
+
+    @include for-laptop-up {
+      width: 50%;
+      padding-top: 2rem;
+    }
+  }
+}
+
+.desktop {
+  @include for-phone-only {
+    display: none;
   }
 }
