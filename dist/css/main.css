@@ -726,7 +726,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .footer {
-    padding: 0;
+    padding: 5%;
   }
 }
 
@@ -738,7 +738,19 @@ a:hover {
 
 @media (min-width: 769px) and (max-width: 1250px) {
   .footer__logo {
-    width: 15rem;
+    width: 13rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__logo {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .footer__logo {
+    width: 8rem;
   }
 }
 

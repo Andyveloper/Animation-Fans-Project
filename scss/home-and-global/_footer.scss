@@ -4,7 +4,7 @@
   @include flex-row;
 
   @include for-phone-only {
-    padding: 0;
+    padding: 5%;
   }
 
   padding: 4rem 10%;
@@ -16,7 +16,15 @@
     width: 20rem;
 
     @include for-tablet {
-      width: 15rem;
+      width: 13rem;
+    }
+
+    @include for-phone-only {
+      width: 10rem;
+    }
+    
+    @include for-mini-device {
+      width: 8rem;
     }
   }
 
