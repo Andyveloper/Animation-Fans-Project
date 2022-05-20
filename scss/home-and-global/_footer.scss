@@ -4,7 +4,7 @@
   @include flex-row;
 
   @include for-phone-only {
-    @include flex-column;
+    padding: 0;
   }
 
   padding: 4rem 10%;
@@ -14,6 +14,9 @@
     margin: 2rem;
     max-width: 100%;
     width: 20rem;
+    @include for-tablet {
+      width: 15rem;
+    }
   }
 
   &__content {
@@ -22,6 +25,12 @@
 
     &__text {
       padding-top: 1rem;
+      @include for-phone-only {
+        display: none;
+      }
+      @include for-tablet {
+        font-size: 0.8rem;
+      }
     }
   }
 }
