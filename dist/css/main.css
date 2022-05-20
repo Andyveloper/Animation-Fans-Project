@@ -774,6 +774,7 @@ a:hover {
 @media (min-width: 1365px) {
   .past-expo__text-content {
     margin: 0 10%;
+    padding-bottom: 4rem;
   }
 }
 
@@ -795,6 +796,7 @@ a:hover {
     width: 80%;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -813,12 +815,24 @@ a:hover {
 
 @media (min-width: 1365px) {
   .past-expo__grid-item__item1 {
-    padding: 25% 25%;
+    padding: 4rem;
   }
 }
 
 .past-expo__grid-item__item1__title {
   font-size: 2rem;
+}
+
+@media (min-width: 1365px) {
+  .past-expo__grid-item__item1__title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1365px) {
+  .past-expo__grid-item__item1__text-content {
+    font-size: 1.5rem;
+  }
 }
 
 .past-expo__grid-item__item2 {
@@ -835,7 +849,7 @@ a:hover {
 
 @media (min-width: 1365px) {
   .past-expo__grid-item__item2 {
-    padding: 25% 25%;
+    padding: 4rem;
   }
 }
 

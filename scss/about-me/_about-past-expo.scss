@@ -20,6 +20,8 @@
 
     @include for-laptop-up {
       @include desktop-margin;
+
+      padding-bottom: 4rem;
     }
   }
 
@@ -35,6 +37,7 @@
     @include for-laptop-up {
       width: 80%;
       grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
     }
 
     &-item {
@@ -50,11 +53,21 @@
         background-size: cover;
 
         @include for-laptop-up {
-          padding: 25% 25%;
+          padding: 4rem;
         }
 
         &__title {
           font-size: 2rem;
+
+          @include for-laptop-up {
+            font-size: 4rem;
+          }
+        }
+
+        &__text-content {
+          @include for-laptop-up {
+            font-size: 1.5rem;
+          }
         }
       }
 
@@ -69,7 +82,7 @@
         padding: 4rem 5%;
 
         @include for-laptop-up {
-          padding: 25% 25%;
+          padding: 4rem;
         }
       }
     }
