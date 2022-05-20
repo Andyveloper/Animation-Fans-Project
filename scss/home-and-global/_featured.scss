@@ -2,6 +2,7 @@
 
 .featured {
   @include flex-column;
+
   padding: 4rem 0;
   background: url('../img/featured-bg.jpg');
   background-color: $primary_dark;
@@ -23,14 +24,14 @@
   margin: 4rem 10%;
   gap: 3rem;
   align-items: center;
-  width: 90%;
+
   @include for-phone-only {
     width: 90%;
     grid-template-columns: auto;
     margin: 2rem 5%;
     gap: 3rem;
   }
-  
+
   &-item {
     color: set-text-color($primary_dark);
     width: 100%;
@@ -38,6 +39,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     @include for-mini-device {
       font-size: 0.8rem;
     }
@@ -47,6 +49,7 @@
       max-width: 100%;
       height: auto;
       margin: 12px;
+
       @include for-phone-only {
         width: 30%;
       }
@@ -55,6 +58,7 @@
     &__content {
       &__title {
         font-size: 1.5rem;
+
         @include for-mini-device {
           font-size: 1.1rem;
         }
@@ -63,6 +67,7 @@
       &__description {
         color: $primary_important;
         font-size: 0.9rem;
+
         @include for-mini-device {
           font-size: 0.8rem;
         }

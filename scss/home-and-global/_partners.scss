@@ -16,9 +16,9 @@
 
   padding: 0;
   margin: 0 10%;
-  @include for-phone-only{
+
+  @include for-phone-only {
     @include flex-column;
-    
   }
 
   &__item {
@@ -26,9 +26,10 @@
     height: 100%;
     list-style: none;
     margin: 0 1.5rem;
-    
+
     @include for-phone-only {
       @include flex-column;
+
       padding: 4rem 0;
     }
 
@@ -47,7 +48,7 @@
 }
 
 .half-pad {
-  @include for-phone-only{
+  @include for-phone-only {
     padding-top: 4rem;
     padding-bottom: 0;
   }

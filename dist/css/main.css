@@ -483,7 +483,6 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
 }
 
 @media (max-width: 599px) {
