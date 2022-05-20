@@ -547,12 +547,12 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (max-width: 415px) {
@@ -565,7 +565,7 @@ a:hover {
   width: 20%;
   max-width: 100%;
   height: auto;
-  margin: 12px;
+  margin: 0 12px;
 }
 
 @media (max-width: 768px) {
