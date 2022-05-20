@@ -5,6 +5,9 @@
 ## Website Name
 - Animation Fans!
 
+## Loom Video with the Fast Explanation
+- https://www.loom.com/share/01a185d6467f4df6885816d6357906da
+
 ## Project Website (GitHub Pages)
 - https://zeraltz.github.io/First-Capstone/ 
 
