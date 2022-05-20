@@ -1,5 +1,11 @@
+@import 'media-queries';
+
 .footer {
   @include flex-row;
+
+  @include for-phone-only {
+    @include flex-column;
+  }
 
   padding: 4rem 10%;
   background-color: $primary_dark;
@@ -13,6 +19,7 @@
   &__content {
     width: 100%;
     color: set-text-color($primary_dark);
+
     &__text {
       padding-top: 1rem;
     }
