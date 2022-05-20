@@ -6,7 +6,6 @@
   @media (max-width: 768px) { @content; }
 }
 
-
 @mixin for-laptop-up {
   @media (min-width: 769px) { @content; }
 }
