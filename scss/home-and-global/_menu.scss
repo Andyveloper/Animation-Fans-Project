@@ -19,6 +19,9 @@
 
 img {
   max-width: 5%;
+}
+
+.menu-link {
   margin-right: auto;
 }
 
@@ -41,6 +44,11 @@ header {
 
       @include for-laptop-up {
         margin: 0 2rem;
+      }
+
+      @include for-tablet {
+        font-size: 0.8rem;
+        margin: 0 0.8rem;
       }
     }
 
@@ -92,4 +100,10 @@ a:hover {
   padding: 1rem 1rem;
   margin-left: 3rem;
   font-size: 1.2rem;
+  @include for-tablet {
+    font-size: 0.8rem;
+    margin-left: 0;
+    padding: 0.5rem 0.5rem;
+    border: 2px solid $primary_important;
+  }
 }

@@ -32,6 +32,11 @@
     gap: 3rem;
   }
 
+  @include for-tablet {
+    grid-template-columns: auto;
+    width: 80%;
+  }
+
   &-item {
     color: set-text-color($primary_dark);
     width: 100%;
