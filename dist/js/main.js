@@ -3,4 +3,3 @@ import toggleMenu from './burgerMenu.js';
 
 populateCards();
 toggleMenu;
-
