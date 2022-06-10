@@ -12,7 +12,7 @@
 - https://github.com/Zeraltz/Animation-Fans-Project
 
 ## Clone the Project
-- `git clone https://github.com/Zeraltz/Animation-Fans-Project.git`
+- ```git clone https://github.com/Zeraltz/Animation-Fans-Project.git```
 
 ## Built With
 
