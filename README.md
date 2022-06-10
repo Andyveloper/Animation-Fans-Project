@@ -9,10 +9,10 @@
 - https://www.loom.com/share/01a185d6467f4df6885816d6357906da
 
 ## Project Website (GitHub Pages)
-- https://zeraltz.github.io/First-Capstone/ 
+- https://github.com/Zeraltz/Animation-Fans-Project
 
 ## Clone the Project
-- `git clone https://github.com/Zeraltz/First-Capstone.git`
+- `git clone https://github.com/Zeraltz/Animation-Fans-Project.git`
 
 ## Built With
 
