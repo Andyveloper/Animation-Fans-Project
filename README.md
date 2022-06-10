@@ -1,6 +1,6 @@
 
 # Project Name
-- First Capstone Project
+- Animation Fans Project
 
 ## Website Name
 - Animation Fans!
