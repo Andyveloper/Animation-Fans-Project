@@ -11,7 +11,7 @@
 
 ## Project Website (GitHub Pages)
 
-- https://zeraltz.github.io/Animation-Fans-Project/
+- https://andyveloper.github.io/Animation-Fans-Project/
 
 ## Clone the Project
 
